@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITM flaws allowed creation of counterfeit driving licenses</title>
+    <link rel="stylesheet" href="app.css">
+    <style>
+ 
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #0f0e0e9f;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Content styles */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .image {
+            float: left;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .headline {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 28px;
+        }
+        .text p {
+            margin-bottom: 1px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CNI CYBER THREAT INTELLIGENCE SERVICE</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="news.html">News</a>
+            <div class="dropdown-content">
+                <a href="latestNews.html">All & Latest News</a>
+            </div>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <img src="images/india_roads.jpg" alt="Indian Road" class="image" style="width:400px;height:250px;">
+        <div class="text">
+            <span class="headline">ITM flaws allowed creation of counterfeit driving licenses</span>
+            <br>
+            <p>By Thomas Hughes</p>
+            <p>14/03/2024</p>
+            <br>
+            <p>On February 20, Robin Justin, a student and cybersecurity researcher, disclosed a series of vulnerabilities affecting Sarathi Parivahan, the website for India's Ministry of Road Transport and Highways. The platform enables the application process for learner's permits and driving licenses.</p>
+            <p>During an attempt to apply for a driving license, Justin quickly identified flaws in certain endpoints, including broken access controls and missing authorization checks. Interestingly, authentication only required an application number and the applicant's date of birth. Exploiting a flawed endpoint as an attacker could input a random application number to access sensitive personal information, including the applicant's name, address, driving license number, and even their photograph.</p>
+            <p>To make matters worse, Justin discovered a second vulnerable endpoint that only required a phone number and the victim's date of birth to retrieve the application number. This significantly increased the risk as it simplified the process for malicious attackers to access sensitive data.</p>
+            <p>Additionally, Justin uncovered a publicly accessible feature, originally intended for administrators only, which permitted access to documents uploaded by applicants. Describing this as a "critically vulnerable endpoint hiding quite literally in plain sight," Justin highlighted the potential for significant privacy breaches.</p>
+            <p>Despite reporting these vulnerabilities to India's Computer Emergency Response Team (CERT-IN), Justin encountered a poorly-secured one-time password (OTP) system for a SYSADMIN account. This allowed unauthorized access to administrative privileges, enabling Justin to conduct applicant searches, view documents, and even process applications without verification checks.</p>
+            <p>Justin emphasized the severity of the situation, noting that he gained access to critical documents such as Aadhaar Cards and passports of millions of Indian license holders. He also highlighted the potential to generate government-approved driver's licenses at his discretion.</p>
+            <p>After reporting the additional vulnerability to CERT-IN, Justin's efforts ultimately led to fixes being confirmed on January 25, 2023. Despite the gravity of the situation, Justin noted the simplicity of the research process and confirmed that he faced no legal repercussions.</p>
+            <p>However, Justin expressed dissatisfaction with the response from CERT-IN, which provided limited feedback beyond acknowledging the fixes. Attempts to obtain further clarification from CERT-IN and Sarathi Parivahan have so far been unsuccessful.</p>
+            <h2>References</h2>
+            <p>Osborne, C. (2023. Feb, 28) Indian transport ministry flaws potentially allowed creation of counterfeit driving licenses. portswigger.net. https://portswigger.net/daily-swig/indian-transport-ministry-flaws-potentially-allowed-creation-of-counterfeit-driving-licenses#:~:text=Indian%20transport%20ministry%20flaws%20potentially%20allowed%20creation%20of%20counterfeit%20driving%20licenses,-Charlie%20Osborne%2028&text=A%20researcher%20has%20disclosed%20how,counterfeit%20driving%20licenses%20to%20boot.</p>
+        </div>
+        <section class="heading">
+            <h2>Recommendations for Mitigation</h2>
+        <p><b>Enhanced Access Controls and Authorization Checks:</b> Implement robust access controls and authorization checks to ensure that sensitive endpoints and features are only accessible to authorized users. This includes implementing role-based access controls (RBAC), multi-factor authentication (MFA), and regular access reviews to prevent unauthorized access to personal data and administrative functionalities.</p>
+        <p><b>Improved Authentication Mechanisms:</b> Strengthen the authentication process by implementing stronger authentication mechanisms, such as biometric authentication or hardware tokens, to verify the identity of users accessing the portal. Additionally, consider implementing CAPTCHA or rate-limiting mechanisms to deter brute-force attacks on authentication endpoints.</p>
+        <p><b>Secure Endpoint Validation:</b> Conduct thorough validation of input parameters and endpoints to prevent injection attacks, such as SQL injection or parameter manipulation. Implement input validation techniques and security controls, such as parameterized queries and output encoding, to mitigate the risk of data exposure through flawed endpoints.</p>
+        <p><b>Continuous Security Monitoring:</b> Implement continuous security monitoring and logging mechanisms to detect and respond to unauthorized access attempts, suspicious activities, or security incidents in real time. Utilize intrusion detection systems (IDS), security information and event management (SIEM) tools, and log analysis techniques to monitor and analyze network traffic, system activities, and user behavior for signs of compromise.</p>
+    </section>
+    </div>
+    <div class="review">
+        
+    </div>
+</body>
+</html>

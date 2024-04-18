@@ -1,0 +1,184 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #0202029f;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section {
+    padding:20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Homepage specific styles */
+.homepage {
+    background-color: #ffffff;
+
+}
+
+.homepage h2 {
+    color: #333;
+}
+
+.homepage p {
+    color: #666;
+}
+
+h1 {
+    color:rgb(255, 255, 255)
+}
+
+/* About Us page specific styles */
+.about-us {
+    background-color: #e6e6e6;
+    padding: 20px;
+}
+
+.about-us h2 {
+    color: #333;
+}
+
+.about-us p {
+    color: #666;
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    color: #666;
+}
+
+.about-us ul li:before {
+    content: "\2022"; /* bullet character */
+    color: #333;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.article-box {
+    max-width: 800px;
+    flex: 0 1 calc(33% - 5px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.article-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0; 
+}
+
+.article-box h2 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.article-box p {
+    color: #666;
+}
+
+.article-box a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+.heading h2{
+    font-size: 28px; 
+    font-weight: bold; 
+    color: #000000; 
+    background-color: #ffffff00; 
+    padding: 10px 20px; 
+    margin-bottom: 10px; 
+    border-radius: 15px; 
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style dropdown links */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.introduction {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    
+}
+
+
+.introduction h3,
+.introduction p {
+    /* Adjust text styles as needed */
+    color: #333;
+}
+
+/* Adjust opacity for the background image */
+.background-image {
+    opacity: 0.2; 
+}

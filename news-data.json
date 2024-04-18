@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Indian transport ministry flaws potentially allowed creation of counterfeit driving licenses",
+        "description": "",
+        "image": "images/india_roads.jpg",
+        "link": "article3.html",
+        "featured": true,
+        "publicationDate": "2024-03-17"
+    },
+    {
+        "title": "Siginificant threat to UK's critical infrstructure",
+        "description": "NCSC issues warning to UK over CNI concerns. ",
+        "image": "images/hacker.jpg",
+        "link": "article2.html",
+        "featured": true,
+        "publicationDate": "2024-03-16"
+    },
+    {
+        "title": "Cybercrime on 'critical infrastructure' increasing in New York",
+        "description": "",
+        "image": "images/osc-seal.jpg",
+        "link": "article1.html",
+        "featured": true,
+        "publicationDate": "2024-03-14"
+    },
+    {
+        "title": "WannaCry attack on the NHS Analysed",
+        "description": "",
+        "image": "images/NHS.jpg",
+        "link": "article4.html",
+        "featured": true,
+        "publicationDate": "2024-03-13"
+    },
+    {
+        "title": "Energy Sector Most at Risk",
+        "description": "Enery sector named most at risk National Infrastructure to a cyber attack. ",
+        "image": "images/energy.jpg",
+        "link": "article5.html",
+        "featured": false,
+        "publicationDate": "2024-03-05"
+    },
+    {
+        "title": "British Army Trains Ukrainian Forces to Safeguard Critical Infrastructure",
+        "description": "",
+        "image": "images/army.jpg",
+        "link": "article6.html",
+        "featured": false,
+        "publicationDate": "2024-03-03"
+    },
+    {
+        "title": "long-term investment in critical national infrastructure is paramount",
+        "description": "",
+        "image": "images/tunnel.jpg",
+        "link": "article7.html",
+        "featured": false,
+        "publicationDate": "2024-03-01"
+    },
+    {
+        "title": "Attacks on the rise in Australia with critical national infrastructure in the cross hairs",
+        "description": "",
+        "image": "images/aus.jpg",
+        "link": "article8.html",
+        "featured": false,
+        "publicationDate": "2024-02-28"
+    },
+    {
+        "title": "Over 61 million patients data compromised",
+        "description": "Cyber attacks on hospitals on the rise",
+        "image": "images/bed.jpg",
+        "link": "article9.html",
+        "featured": false,
+        "publicationDate": "2024-02-25"
+    },
+    {
+        "title": "North Texas water utility hit with ransomeware attack",
+        "description": "",
+        "image": "images/texas.jpg",
+        "link": "article10.html",
+        "featured": false,
+        "publicationDate": "2024-03-20"
+    }
+]
